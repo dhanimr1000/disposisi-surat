@@ -1,10 +1,12 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No Direct Script Acces Allowed');
 
 class Menu extends CI_Controller {
-
-	public function index()
-	{
-		$this->load->view('welcome_message');
-	}
+    public function Index()
+    {
+        $data = array(
+            'content'=> 'dashboard/index.php'
+        );
+        $this->load->view('template/main',$data);
+    }
 }
